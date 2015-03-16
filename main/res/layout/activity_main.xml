@@ -1,0 +1,77 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ScrollView>
+
+
+
+    <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0.10"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:layout_toEndOf="@+id/scrollView1"
+        android:layout_below="@+id/textViewAd"
+        android:layout_marginTop="15dp">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ads will end up going here"
+        android:id="@+id/textViewAd"
+        android:layout_below="@+id/scrollView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/listView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="165dp"
+        android:layout_alignRight="@+id/listView1"
+        android:layout_alignEnd="@+id/listView1"
+        android:textColor="#1B789D"
+        android:textSize="75px"
+        android:shadowColor="#000"
+        android:shadowRadius="2.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewJoke"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#a52a2a"
+        android:textSize="55px"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
